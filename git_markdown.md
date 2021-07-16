@@ -1,6 +1,6 @@
 # Git
 
-(__버전__을 통해) 코드 관리 도구
+(**버전**을 통해) 코드 관리 도구
 
 * 버전 관리 도구
   * 변경 이력 트래킹
@@ -38,7 +38,7 @@
 
 # Git 버전관리
 
-> 중요: Git은 __폴더 단위__로 코드 관리
+> 중요: Git은 **폴더 단위**로 코드 관리
 
 * 커밋== 버전 생성==스냅샷 촬영==현재 상태 저장
 
@@ -186,4 +186,33 @@ Omit --global to set the identity only in this repository.
 
 * 새로운 remote를 추가한다. [location]에는 URL 또는 파일 경로를 넣을 수 있다.
 
-  
+  ```
+  $ git remote add origin https://github.com/sjlee900211/markdown.git
+  ```
+
+
+
+# `git push origin master`
+
+* origin이라는 저장소의  master branch에 밀어넣는다.
+
+# `git remote show [remote name]`
+* 어떤 이름을 갖고 있는 remote의 branch와 정보를 표시한다.
+  ```
+  $ git remote show origin
+
+  * remote origin
+  Fetch URL: https://github.com/sjlee900211/markdown.git
+  Push  URL: https://github.com/sjlee900211/markdown.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+# `git remote rm [remote name]`
+* remote 경로를 제거한다.
+
+# `code`
+* Visual Studio Code를 열어라.
+* 현재 CMD 경로에서의 VS Code를 열고 싶을 경우 `$ code .`
